@@ -11,7 +11,7 @@ https://openfasoc.readthedocs.io/en/latest/getting-started.html#installation
 
 You can either follow the express installation or the manual installation steps.
 
-The following tools will be required
+The following tools will be required for complete flow
 1. OpenRoad
 2. Magic
 3. Yosys
@@ -42,3 +42,73 @@ sudo apt-get install <packagename>.deb
 
 ## Understanding the Verilog Generation flow for Placement 
 
+# ==============================================================================
+#  ____  _        _    ____ _____
+# |  _ \| |      / \  / ___| ____|
+# | |_) | |     / _ \| |   |  _|
+# |  __/| |___ / ___ \ |___| |___
+# |_|   |_____/_/   \_\____|_____|
+#
+# ==============================================================================
+
+The following steps are as mentioned in the Makefile found at the following path https://github.com/idea-fasoc/OpenFASOC/blob/main/openfasoc/generators/temp-sense-gen/flow/Makefile. This file defines the proper flow of generating the temp-sense-gen from auxilliary files to finished product.
+
+** Inputs: ** This step receives the 2_floorplan.odb , 2_floorplan.sdc files as the input along with aux_files in .gds format. 
+
+** Outputs: ** It will give out a 3_place.odb file. The output of this phase will have all instances placed in their corresponding voltage domain, ready for routing.  
+
+** Process post placement: ** The input odb files obtained as an output from OpenROAD flow are first converted to .def, and now the aux files along with newly generated .def files are converted into gds, these files and tech files (klayout.lyt) are read and the corresponding placement image in SVG format is obtained.
+
+
+** The steps involved in this process are: **
+
+STEP 1: Global placement without placed IOs, timing-driven, and routability-driven. 
+
+STEP 2: IO placement (non-random)
+
+STEP 3: Global placement with placed IOs, timing-driven, and routability-driven.
+
+STEP 4: Resizing & Buffering (not needed for the tempsense)
+
+STEP 5: Detail placement
+
+STEP 6: Clean Targets
+
+![image](https://github.com/McLucifer2646/openFASOC_placement/blob/7ce9ee1831767abfd174417887a3dfc0500286f5/Images/Makefile1.png)
+
+![image](https://github.com/McLucifer2646/openFASOC_placement/blob/f3e61d224f602e26cdf49927c8a83861c401fef3/Images/Makefile_2.png)
+
+
+** These steps can be used in the project file by using a python script, present at the following location. **
+https://github.com/idea-fasoc/OpenFASOC/blob/main/openfasoc/generators/temp-sense-gen/tools/temp-sense-gen.py
+
+** In this file we have the following snippet explaining the section of the code responsible for PLACEMENT. **
+
+![image](https://github.com/McLucifer2646/openFASOC_placement/blob/f3e61d224f602e26cdf49927c8a83861c401fef3/Images/p1.png)
+
+
+
+### OpenFASoC flow 
+
+![image](https://user-images.githubusercontent.com/110677094/199426029-2676771d-e8bc-406f-bf9c-22f617aab4aa.png)
+
+
+<h4> Running the OpenFASOC Flow for temperature sensor generator </h4>
+
+1. Clone the openfasoc git repo using the below command
+
+```
+git clone https://github.com/idea-fasoc/openfasoc
+```
+
+2. Move to the required temp-sense-gen directory 
+```
+cd openfasoc/generators/temp-sense-gen
+```
+
+3. Give the following commands
+
+```
+make
+
+```
