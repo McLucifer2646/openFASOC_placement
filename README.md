@@ -41,7 +41,7 @@ sudo apt-get install <packagename>.deb
 ```
 
 ## Understanding the Verilog Generation flow for Placement 
-
+```
  ==============================================================================
   ____  _        _    ____ _____
 
@@ -52,10 +52,10 @@ sudo apt-get install <packagename>.deb
  |  __/| |___ / ___ \ |___| |___
 
  |_|   |_____/_/   \_\____|_____|
- 
+
 
  ==============================================================================
-
+```
 The following steps are as mentioned in the Makefile found at the following path https://github.com/idea-fasoc/OpenFASOC/blob/main/openfasoc/generators/temp-sense-gen/flow/Makefile. This file defines the proper flow of generating the temp-sense-gen from auxilliary files to finished product.
 
 ** Inputs: ** This step receives the 2_floorplan.odb , 2_floorplan.sdc files as the input along with aux_files in .gds format. 
