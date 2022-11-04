@@ -53,14 +53,14 @@ sudo apt-get install <packagename>.deb
 ```
 The following steps are as mentioned in the Makefile found at the following path https://github.com/idea-fasoc/OpenFASOC/blob/main/openfasoc/generators/temp-sense-gen/flow/Makefile. This file defines the proper flow of generating the temp-sense-gen from auxilliary files to finished product.
 
-** Inputs: ** This step receives the 2_floorplan.odb , 2_floorplan.sdc files as the input along with aux_files in .gds format. 
+**Inputs:** This step receives the 2_floorplan.odb , 2_floorplan.sdc files as the input along with aux_files in .gds format. 
 
-** Outputs: ** It will give out a 3_place.odb file. The output of this phase will have all instances placed in their corresponding voltage domain, ready for routing.  
+**Outputs:** It will give out a 3_place.odb file. The output of this phase will have all instances placed in their corresponding voltage domain, ready for routing.  
 
-** Process post placement: ** The input odb files obtained as an output from OpenROAD flow are first converted to .def, and now the aux files along with newly generated .def files are converted into gds, these files and tech files (klayout.lyt) are read and the corresponding placement image in SVG format is obtained.
+**Process post placement:** The input odb files obtained as an output from OpenROAD flow are first converted to .def, and now the aux files along with newly generated .def files are converted into gds, these files and tech files (klayout.lyt) are read and the corresponding placement image in SVG format is obtained.
 
 
-** The steps involved in this process are: **
+**The steps involved in this process are:**
 
 STEP 1: Global placement without placed IOs, timing-driven, and routability-driven. 
 
@@ -79,10 +79,10 @@ STEP 6: Clean Targets
 ![image](https://github.com/McLucifer2646/openFASOC_placement/blob/f3e61d224f602e26cdf49927c8a83861c401fef3/Images/Makefile_2.png)
 
 
-** These steps can be used in the project file by using a python script, present at the following location. **
+**These steps can be used in the project file by using a python script, present at the following location.**
 https://github.com/idea-fasoc/OpenFASOC/blob/main/openfasoc/generators/temp-sense-gen/tools/temp-sense-gen.py
 
-** In this file we have the following snippet explaining the section of the code responsible for PLACEMENT. **
+**In this file we have the following snippet explaining the section of the code responsible for PLACEMENT.**
 
 ![image](https://github.com/McLucifer2646/openFASOC_placement/blob/f3e61d224f602e26cdf49927c8a83861c401fef3/Images/p1.png)
 
