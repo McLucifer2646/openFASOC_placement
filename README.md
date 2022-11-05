@@ -110,7 +110,6 @@ cd openfasoc/generators/temp-sense-gen
 
 ```
 make
-
 ```
 
 ## Author 
