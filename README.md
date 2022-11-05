@@ -112,3 +112,23 @@ cd openfasoc/generators/temp-sense-gen
 make
 
 ```
+
+## Author 
+
+- **Anshul Madurwar** 
+
+
+## Contributors 
+
+- **Anshul Madurwar** 
+- **Kunal Ghosh** 
+
+
+## Acknowledgments
+
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+
+## Contact Information
+
+- Anshul Madurwar, Integrated MTech Student, International Institute of Information Technology, Bangalore  Anshul.Madurwar@iiitb.ac.in
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
