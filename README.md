@@ -1,9 +1,9 @@
 # openFASOC - Placement
 <h4> Verification of existing openFasoc flow </h4>
 
-FASoC stands for Fully Autonomous System-on-Chip
+**FASoC stands for Fully Autonomous System-on-Chip**
 
-The FASoC Program is focused on developing a complete system-on-chip (SoC) synthesis tool from user specification to GDSII. FASoC leverages a differentiating technology to automatically synthesize “correct-by-construction” Verilog descriptions for both analog and digital circuits and enable a portable, single pass implementation flow. The SoC synthesis tool realizes analog circuits, including PLLs, power management, ADCs, and sensor interfaces by recasting them as structures composed largely of digital components while maintaining analog performance. They are then expressed as synthesizable Verilog blocks composed of digital standard cells augmented with a few auxiliary cells generated with an automatic cell generation tool. By expanding the IPXACT format and the Socrates tool from ARM, we then enable composition of vast numbers of digital and analog components into a single correct-by-construction design. This project is led by a team of researchers at the Universities of Michigan, Virginia, and Arm.
+OpenFASOC is focused on automating analog generation using open-source tools. OpenFASOC converts user specification to GDSII with fully open-sourced tools. This project is led by a team of researchers at the University of Michigan. Fully Open-Source Autonomous SoC Synthesis OpenFASOC uses Customizable Cell-Based approach to synthesize analog circuits. Basically, OpenFASoC Program is focused on developing a complete system-on-chip (SoC) synthesis tool from user specification to GDSII with fully open-sourced tools.
 
 # Installation
 ## OpenFASOC:
