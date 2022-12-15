@@ -200,11 +200,11 @@ Placement takes place after the floorplan is ready and has two phases: global pl
 - Rectification and identification of the cause for the crash in the routing step is needed.
 - Generated Warnings and missing connection have to be sorted.
 
-# Author
+## Author
 
 - **Anshul Madurwar**
 
-# Acknowledgments
+## Acknowledgments
 
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
 - Madhav Rao, Associate Professor, IIIT Bangalore
