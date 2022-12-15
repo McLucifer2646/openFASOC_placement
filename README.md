@@ -171,13 +171,13 @@ The physical implementation of the analog blocks in the circuit is done using tw
 
 Placement takes place after the floorplan is ready and has two phases: global placement and detailed placement. The output of this phase will have all objects placed in their corresponding voltage domain, ready for routing.
 
-# The Global Placement power and area report is shown below:
+### The Global Placement power and area report is shown below:
 
 <p align="center">
   <img src="/Images/global_place_rpt.png">
 </p><br>
 
-# The Detailed Placement power and area report is shown below:
+### The Detailed Placement power and area report is shown below:
 
 <p align="center">
   <img src="/Images/detailed_place_rpt.png">
