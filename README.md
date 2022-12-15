@@ -1,5 +1,5 @@
 # openFASOC - Placement
-<h4> Verification of existing openFasoc flow </h4>
+## Verification of existing openFasoc flow
 
 **FASoC stands for Fully Autonomous System-on-Chip**
 
