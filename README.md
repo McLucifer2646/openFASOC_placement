@@ -146,16 +146,55 @@ The physical implementation of the analog blocks in the circuit is done using tw
 
 
 ## HEADER cell in klayout
+
+```
+/temp-sense-gen/blocks/sky130hd/gds$ klayout HEADER.gds 
+
+```
+
 <p align="center">
   <img src="/Images/Headers.png">
 </p><br>
 
-## HEADER cell in klayout
+## SLC cell in klayout
+
+```
+/temp-sense-gen/blocks/sky130hd/gds$ klayout SLC.gds 
+
+```
+
 <p align="center">
   <img src="/Images/SLC.png">
 </p><br>
 
 ## Placement using OpenFASOC Flow for Temperature Sensor Generation
+
+Placement takes place after the floorplan is ready and has two phases: global placement and detailed placement. The output of this phase will have all objects placed in their corresponding voltage domain, ready for routing.
+
+# The Global Placement power and area report is shown below:
+
+<p align="center">
+  <img src="/Images/global_place_rpt.png">
+</p><br>
+
+# The Detailed Placement power and area report is shown below:
+
+<p align="center">
+  <img src="/Images/detailed_place_rpt.png">
+</p><br>
+
+## Final design after running the entire flow
+
+```
+/temp-sense-gen/flow/results/sky130hd/tempsense$ klayout 6_final.gds
+
+```
+
+<p align="center">
+  <img src="/Images/Placement.png">
+</p><br>
+
+
 
 # Author
 
