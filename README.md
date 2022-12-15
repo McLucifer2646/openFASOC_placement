@@ -196,6 +196,10 @@ Placement takes place after the floorplan is ready and has two phases: global pl
   <img src="/Images/Placement.png">
 </p>
 
+**This is about the OpenFASOC flow and Placement using OpenFASOC flow, we then implemented a completely new PLL design using which the entire flow was rerun and this is explained in the link attached below: <br>**
+
+https://github.com/TejasBN28/OpenFASOC#4-PLL-Generator
+
 ## Future Works
 - Rectification and identification of the cause for the crash in the routing step is needed.
 - Generated Warnings and missing connection have to be sorted.
