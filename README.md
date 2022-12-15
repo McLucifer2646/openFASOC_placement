@@ -159,7 +159,7 @@ The physical implementation of the analog blocks in the circuit is done using tw
 
 # Author
 
-- **Anshul Madurwar**
+- **Tejas B N**
 
 # Acknowledgments
 
