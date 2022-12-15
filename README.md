@@ -139,6 +139,10 @@ The physical implementation of the analog blocks in the circuit is done using tw
 ```
 The following steps are as mentioned in the Makefile found at the following path https://github.com/idea-fasoc/OpenFASOC/blob/main/openfasoc/generators/temp-sense-gen/flow/Makefile. This file defines the proper flow of generating the temp-sense-gen from auxilliary files to finished product.
 
+<p align="center">
+  <img src="/Images/flow.jpg">
+</p><br>
+
 **Inputs:** This step receives the 2_floorplan.odb , 2_floorplan.sdc files as the input along with aux_files in .gds format. 
 
 **Outputs:** It will give out a 3_place.odb file. The output of this phase will have all instances placed in their corresponding voltage domain, ready for routing.  
