@@ -5,8 +5,8 @@ FASoC stands for Fully Autonomous System-on-Chip
 
 The FASoC Program is focused on developing a complete system-on-chip (SoC) synthesis tool from user specification to GDSII. FASoC leverages a differentiating technology to automatically synthesize “correct-by-construction” Verilog descriptions for both analog and digital circuits and enable a portable, single pass implementation flow. The SoC synthesis tool realizes analog circuits, including PLLs, power management, ADCs, and sensor interfaces by recasting them as structures composed largely of digital components while maintaining analog performance. They are then expressed as synthesizable Verilog blocks composed of digital standard cells augmented with a few auxiliary cells generated with an automatic cell generation tool. By expanding the IPXACT format and the Socrates tool from ARM, we then enable composition of vast numbers of digital and analog components into a single correct-by-construction design. This project is led by a team of researchers at the Universities of Michigan, Virginia, and Arm.
 
-# 2. Installation
-## 2.1 OpenFASOC:
+# Installation
+## OpenFASOC:
 The command used to install OpenFASOC are 
 ```
 git clone https://github.com/idea-fasoc/openfasoc
@@ -15,7 +15,7 @@ pip install -r requirements.txt
 ```
 For the complete steps of installing OpenFASOC, refer Manual Installation from [here](https://github.com/idea-fasoc/OpenFASOC/blob/main/docs/source/getting-started.rst). 
 
-## 2.2 OpenROAD: 
+## OpenROAD: 
 OpenROAD is an integrated chip physical design tool that takes a design from synthesized Verilog to routed layout. OpenROAD uses the OpenDB database and OpenSTA for static timing analysis. Documentation is also available [here](https://openroad.readthedocs.io/en/latest/main/README.html).
 
 
@@ -32,14 +32,14 @@ cmake ..
 make
 ```
 
-## 2.3 Klayout
+## Klayout
 Downlaod the latest version of the Klayout from [here](https://www.klayout.de/build.html). Install the following dependencies: qt5-default, qttools5-dev, libqt5xmlpatterns5-dev, qtmultimedia5-dev, libqt5multimediawidgets5 and libqt5svg5-dev.
 ```
 sudo apt-get install -y libqt5widgets5
 sudo dpkg -i klayout_0.27.11-1_amd64.deb
 ```
 
-## 2.4 Netgen
+## Netgen
 To install Netgen, 
 ```
 sudo add-apt-repository ppa:ngsolve/ngsolve
@@ -47,7 +47,7 @@ sudo apt-get update
 sudo apt-get install ngsolve
 ```
 
-## 2.5 Yosys
+## Yosys
 The software used to run gate level synthesis is Yosys. Yosys is a framework for Verilog RTL synthesis. It currently has extensive Verilog-2005 support and provides a basic set of synthesis algorithms for various application domains. Yosys can be adapted to perform any synthesis job by combining the existing passes (algorithms) using synthesis scripts and adding additional passes as needed by extending the Yosys C++ code base.
 
 
@@ -66,7 +66,7 @@ sudo make install
 make test
 ```
 
-## 2.6. Magic
+## Magic
 Run following commands one by one to fulfill the system requirement.
 #### Prerequisites for magic
 ```
@@ -136,7 +136,7 @@ https://github.com/idea-fasoc/OpenFASOC/blob/main/openfasoc/generators/temp-sens
 
 
 
-### OpenFASoC flow for Temperature Sensor Generator
+## OpenFASoC flow for Temperature Sensor Generator
 
 I have considered a pre-existing example of the temp_sense_gen file as provided in the openFASOC repository for showing the workflow of the system. In this project I have majorly worked on the placement of the furnished auxilliary cells optained from my fellow team-mates.
 
@@ -145,22 +145,20 @@ The physical implementation of the analog blocks in the circuit is done using tw
 - SLC cell, containing the Split-Control Level Converter.
 
 
-## HEADER cell in klayout
+### HEADER cell in klayout
 
 ```
-/temp-sense-gen/blocks/sky130hd/gds$ klayout HEADER.gds 
-
+/temp-sense-gen/blocks/sky130hd/gds$ klayout HEADER.gds
 ```
 
 <p align="center">
   <img src="/Images/Headers.png">
 </p><br>
 
-## SLC cell in klayout
+### SLC cell in klayout
 
 ```
 /temp-sense-gen/blocks/sky130hd/gds$ klayout SLC.gds 
-
 ```
 
 <p align="center">
@@ -187,13 +185,13 @@ Placement takes place after the floorplan is ready and has two phases: global pl
 
 ```
 /temp-sense-gen/flow/results/sky130hd/tempsense$ klayout 6_final.gds
-
 ```
 
 <p align="center">
   <img src="/Images/Placement.png">
-</p><br>
+</p>
 
+## Future Works
 
 
 # Author
