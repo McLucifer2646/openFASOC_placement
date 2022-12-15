@@ -88,6 +88,35 @@ sudo make
 sudo make install
 ```
 
+## OpenFASoC flow for Temperature Sensor Generator
+
+I have considered a pre-existing example of the temp_sense_gen file as provided in the openFASOC repository for showing the workflow of the system. In this project I have majorly worked on the placement of the furnished auxilliary cells optained from my fellow team-mates.
+
+The physical implementation of the analog blocks in the circuit is done using two manually designed standard cells (auxillary cells):<br>
+- HEADER cell, containing the transistors in subthreshold operation;
+- SLC cell, containing the Split-Control Level Converter.
+
+
+### HEADER cell in klayout
+
+```
+/temp-sense-gen/blocks/sky130hd/gds$ klayout HEADER.gds
+```
+
+<p align="center">
+  <img src="/Images/Headers.png">
+</p><br>
+
+### SLC cell in klayout
+
+```
+/temp-sense-gen/blocks/sky130hd/gds$ klayout SLC.gds 
+```
+
+<p align="center">
+  <img src="/Images/SLC.png">
+</p><br>
+
 ## Understanding the Verilog Generation flow for Placement 
 ```
  ==============================================================================
@@ -134,36 +163,6 @@ https://github.com/idea-fasoc/OpenFASOC/blob/main/openfasoc/generators/temp-sens
 
 ![image](https://github.com/McLucifer2646/openFASOC_placement/blob/f3e61d224f602e26cdf49927c8a83861c401fef3/Images/p1.png)
 
-
-
-## OpenFASoC flow for Temperature Sensor Generator
-
-I have considered a pre-existing example of the temp_sense_gen file as provided in the openFASOC repository for showing the workflow of the system. In this project I have majorly worked on the placement of the furnished auxilliary cells optained from my fellow team-mates.
-
-The physical implementation of the analog blocks in the circuit is done using two manually designed standard cells (auxillary cells):<br>
-- HEADER cell, containing the transistors in subthreshold operation;
-- SLC cell, containing the Split-Control Level Converter.
-
-
-### HEADER cell in klayout
-
-```
-/temp-sense-gen/blocks/sky130hd/gds$ klayout HEADER.gds
-```
-
-<p align="center">
-  <img src="/Images/Headers.png">
-</p><br>
-
-### SLC cell in klayout
-
-```
-/temp-sense-gen/blocks/sky130hd/gds$ klayout SLC.gds 
-```
-
-<p align="center">
-  <img src="/Images/SLC.png">
-</p><br>
 
 ## Placement using OpenFASOC Flow for Temperature Sensor Generation
 
