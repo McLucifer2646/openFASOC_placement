@@ -197,7 +197,8 @@ Placement takes place after the floorplan is ready and has two phases: global pl
 </p>
 
 ## Future Works
-
+- Rectification and identification of the cause for the crash in the routing step is needed.
+- Generated Warnings and missing connection have to be sorted.
 
 # Author
 
@@ -208,3 +209,8 @@ Placement takes place after the floorplan is ready and has two phases: global pl
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
 - Madhav Rao, Associate Professor, IIIT Bangalore
 - Tejas BN, MTech Student, IIIT Bangalore
+
+## Contact Information
+
+- Anshul Madurwar, Integrated MTech Student, International Institute of Information Technology, Bangalore  Anshul.Madurwar@iiitb.ac.in
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
