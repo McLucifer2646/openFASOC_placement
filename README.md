@@ -96,7 +96,7 @@ The complete OpenFASOC flow can be summarised as follows:
 
 ## OpenFASoC flow for Temperature Sensor Generator
 
-I have considered a pre-existing example of the temp_sense_gen file as provided in the openFASOC repository for showing the workflow of the system. In this project I have majorly worked on the placement of the furnished auxilliary cells optained from my fellow team-mates.
+I have considered a pre-existing example of the temp_sense_gen file as provided in the openFASOC repository for showing the workflow of the system. In this project I have majorly worked on the placement of the furnished auxilliary cells obtained from my fellow team-mates.
 
 The physical implementation of the analog blocks in the circuit is done using two manually designed standard cells (auxillary cells):<br>
 - HEADER cell, containing the transistors in subthreshold operation;
