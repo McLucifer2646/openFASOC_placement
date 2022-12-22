@@ -203,6 +203,8 @@ Placement takes place after the floorplan is ready and has two phases: global pl
   <img src="/Images/Placement.png">
 </p>
 
+**I have run this flow in another system due o some issues with my system, so the screenshots might not acknowledge my name.<br>**
+
 **This is about the OpenFASOC flow and Placement using OpenFASOC flow, we then implemented a completely new PLL design using which the entire flow was rerun and this is explained in the link attached below: <br>**
 
 https://github.com/TejasBN28/OpenFASOC#4-PLL-Generator
@@ -220,6 +222,7 @@ https://github.com/TejasBN28/OpenFASOC#4-PLL-Generator
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
 - Madhav Rao, Associate Professor, IIIT Bangalore
 - Tejas BN, MTech Student, IIIT Bangalore
+- Mahati Basavraju, MS Student, IIIT Bangalore
 
 ## Contact Information
 
