@@ -222,7 +222,7 @@ https://github.com/TejasBN28/OpenFASOC#4-PLL-Generator
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
 - Madhav Rao, Associate Professor, IIIT Bangalore
 - Tejas BN, MTech Student, IIIT Bangalore
-- Mahati Basavraju, MS Student, IIIT Bangalore
+- Mahati Basavaraju, MS Student, IIIT Bangalore
 
 ## Contact Information
 
