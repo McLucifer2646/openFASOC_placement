@@ -203,7 +203,7 @@ Placement takes place after the floorplan is ready and has two phases: global pl
   <img src="/Images/Placement.png">
 </p>
 
-**I have run this flow in another system due o some issues with my system, so the screenshots might not acknowledge my name.<br>**
+**I have run this flow in another system due to some issues with my system, so the screenshots might not acknowledge my name.<br>**
 
 **This is about the OpenFASOC flow and Placement using OpenFASOC flow, we then implemented a completely new PLL design using which the entire flow was rerun and this is explained in the link attached below: <br>**
 
